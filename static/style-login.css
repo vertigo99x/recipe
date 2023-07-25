@@ -1,0 +1,176 @@
+:root{
+    --primary:orange;
+    --danger:#ff7782;
+    --success:#41f1b6;
+    --warning:#ffbb55;
+    --white:#fefefe;
+    --info-dark:#7d8da1;
+    --info-light:#dce1eb;
+    --dark:#363949;
+    --light:rgba(132, 139, 200, 0.4);
+    --primary-variant:#111e88;
+    --dark-variant:#677483;
+    --background:#f0f5f7;
+
+    --modal-background:#00000066;
+    --modal-dark:#5c6979;
+
+    --card-border-radius:1.6rem;
+    --border-radius-1:0.5rem;
+    --border-radius-2:0.8rem;
+    --border-radius-3:1.2rem;
+
+    --card-padding:1.8rem;
+    --padding-1:1.2rem;
+
+
+
+    --box-shadow:0 2rem 3rem #00000066;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: Averta;
+    src: url('./AvertaDemoPECuttedDemo-Regular.otf');
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    font-family: "averta",Arial, Helvetica, sans-serif;
+    color:var(--dark);
+}
+
+.wrapper{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:2.5rem;
+    background: var(--background);
+    background-image: url(./pexels-kasumi-loffler-3535395.jpg);
+    background-size: cover;
+    
+   
+}
+
+form {
+    padding:1rem;
+    background-color:var(--modal-background) ;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-1);
+    width:100%;
+    max-width:30rem;
+    backdrop-filter: blur(2px);
+
+}
+
+form .field {
+    margin:1rem;
+    display: flex;
+}
+
+.field p{
+    color:var(--white);
+}
+
+.field p span{
+    text-decoration: none;
+    cursor: pointer;
+    color:var(--primary);
+    transition: all .3s ease;
+}
+.field p span:hover{
+    text-decoration: underline !important;
+    color:var(--primary);
+    letter-spacing: 2px;;
+}
+
+
+
+form .field input, .field select{
+    width:100%;
+    padding:.5rem;
+    font-size:1rem;
+    font-family: inherit;
+    border:none;
+    background: transparent;
+    color:var(--white);
+    border-bottom: 2px solid var(--primary);
+}
+.field option{
+    background-color:var(--modal-background);
+   
+}
+
+input::placeholder{
+    color: #cecece;
+}
+
+
+.field h3{
+    color:var(--primary);
+    text-transform: uppercase;
+    margin-top:-.5rem;
+    text-align: center;
+    width:100%;
+    
+}
+
+
+button{
+    width:100%;
+    padding:0.5rem;
+    border-radius: .5rem;
+    background-color: var(--primary);
+    color:#f0f5f7;
+    border:2px solid var(--primary);
+    font-size:1rem;
+    font-family:inherit;
+    transition: all .1s ease;
+}
+
+
+button:hover{
+    background: transparent;
+    color:var(--primary);
+    border:2px solid var(--primary);
+    letter-spacing: 2px;
+}
+
+
+header{
+    display:flex;
+    justify-content: space-between;
+    padding:0 1rem;
+    font-size:1rem;
+}
+
+
+.discolor {
+    color:var(--primary);
+}
+
+
+@media screen and(max-width:768px) {
+    .wrapper{
+        width:100vw;
+        height:100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding:2.5rem;
+        background: var(--background);
+        background-image: url(./pexels-lumn-604969\ \(1\).jpg);
+        background-size: cover;
+        background-position-y:55%;
+       
+    }
+    
+}
