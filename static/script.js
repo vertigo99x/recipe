@@ -1,6 +1,6 @@
 
 const baseUrl='https://api.spoonacular.com'
-const myKey = 'b804976112614ce09813d814ed657a4a'
+const myKey = ''
 const itemNo = 5
 
 
